@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df215411-b71b-42ee-bc71-4f31722051ad" name="Default Changelist" comment="" />
+    <list default="true" id="df215411-b71b-42ee-bc71-4f31722051ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/html03" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1pzK7473vxv1C9a5w6VWGPVq2Wt" />
@@ -84,7 +86,8 @@
       <workItem from="1616352907885" duration="1574000" />
       <workItem from="1616355468997" duration="1833000" />
       <workItem from="1616357449308" duration="413000" />
-      <workItem from="1616358593997" duration="186000" />
+      <workItem from="1616358593997" duration="398000" />
+      <workItem from="1616359006535" duration="199000" />
     </task>
     <servers />
   </component>
