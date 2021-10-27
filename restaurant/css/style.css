@@ -124,7 +124,8 @@ table {
   font-style: normal;
   font-weight: normal;
   color: #D67E35;
-  width: 500px;
+  max-width: 500px;
+  padding-top: 150px;
 }
 
 .header__title h2 {
@@ -176,4 +177,17 @@ table {
 .header__main_btn{
   display: flex;
   justify-content: center;
+}
+
+.nav__btn_mobile{
+  display:none;
+  width:30px;
+  flex-direction:column;
+  row-gap:4px;
+}
+
+.nav__btn_mobile div{
+  height: 3px;
+  background: #FF7400;
+  border-radius: 50px;
 }
