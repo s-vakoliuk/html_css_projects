@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+.bg-winter{
+    background-color: deepskyblue;
+}
+
+.bg-spring{
+    background-color: forestgreen;
+}
+
+.bg-summer{
+    background-color: orange;
+}
+
+.bg-autumn{
+    background-color: orangered;
+}
