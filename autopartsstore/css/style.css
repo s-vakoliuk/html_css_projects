@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-a {
+.menu__link{
     text-decoration: none;
     font-size: 10pt;
     color: #ffffff;
@@ -197,7 +197,6 @@ li.menu__list-item{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 2px solid red;
 }
 
 .main__carousel{
@@ -207,14 +206,12 @@ li.menu__list-item{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    border: 2px solid blue;
 }
 
 .main__carts{
     width:30%;
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
 }
 
 .main__cart{
@@ -245,8 +242,19 @@ li.menu__list-item{
 
 }
 
-.news_column{
-  max-width: 200px;
-  max-height: 250px;
-  border: 2px solid green;
+.news__column{
+  width: 300px;
+  height: 250px;
+}
+
+.news__button{
+    width: 105px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+
+}
+
+p{
+    text-decoration-color: #FFFFFF;
 }
