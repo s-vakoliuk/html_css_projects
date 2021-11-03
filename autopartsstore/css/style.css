@@ -6,34 +6,43 @@ body {
 a {
     text-decoration: none;
     font-size: 10pt;
+    color: #ffffff;
+}
+
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+   outline: none;
+}
+img {
+   display: block;
+   width: 100%;
 }
 
 .wrapper{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  max-width: 1355px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.wrap__top{
-    width: 100%;
-    height: 232px;
-    background-color: lightblue;
-}
+/*----header----*/
 .menu {
     display: flex;
+    top:0px;
+    left: 0px;
     width: 100%;
     min-height: 25px;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: #20c997;
+    background-color: #0F2438;
     z-index: 999;
 }
 
 ul.menu__list{
     height: 100%;
-    list-style: none;
     text-align: center;
     margin: 0 auto;
 }
@@ -47,10 +56,15 @@ li.menu__list-item{
 
 .menu__left .menu__right{
     height:100%;
-    background-color: darkseagreen;
 }
 
 /*---nav bar---*/
+
+.navbar{
+    max-width: 1355px;
+    max-height: 175px;
+    position: center;
+}
 
 .nav__top{
     display:flex;
@@ -71,56 +85,77 @@ li.menu__list-item{
 .nav__logo{
     width: 20%;
     height: 80px;
-    margin: 10px;
-    background-color: lightpink;
+    margin: 0px;
+    background-image: url("../img/group111.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .nav__work-time{
     width: 20%;
     height: 80px;
-    margin: 10px;
-    background-color: lightsalmon;
+    margin: 0px;
+    background-image: url("../img/group214.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .nav__address{
     width: 20%;
     height: 80px;
-    margin:10px;
-    background-color: lightcyan;
+    margin:0px;
+    background-image: url("../img/group215.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
+
 }
 .nav__whatsapp{
     width: 20%;
     height: 80px;
-    margin: 10px;
-    background-color: lightslategrey;
+    margin: 0px;
+    background-image: url("../img/group213.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .nav__phone-number{
     width: 20%;
     height: 80px;
-    margin: 10px;
-    background-color: lightcoral;
+    margin: 0px;
+    background-image: url("../img/group114.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
 }
 
 .nav__catalog{
     width: 25%;
     height: 80px;
-    margin: 10px;
-    background-color: lightcoral;
+    margin: 0px;
+    background-image: url("../img/group139.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
 }
 
 .nav__search{
     width: 50%;
     height: 80px;
-    margin: 10px;
-    background-color: lightcoral;
+    margin: 0px;
+    background-image: url("../img/group1537.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .nav__in-like-shop{
     width: 25%;
     height: 80px;
-    margin: 10px;
-    background-color: lightcoral;
+    margin: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -129,28 +164,89 @@ li.menu__list-item{
     width: 33%;
     height: 80%;
     margin: 10px;
-    background-color: lightslategrey;
+    background-image: url("../img/group143.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
-.nav__in-like-shop .nav__like{
+.nav__like{
     width: 33%;
     height: 80%;
     margin: 10px;
-    background-color: lightslategrey;
+    background-image: url("../img/group145.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
-.nav__in-like-shop .nav__shopping-cart{
+.nav__shopping-cart{
     width: 33%;
     height: 80%;
     margin: 10px;
-    background-color: lightslategrey;
+    background-image: url("../img/group1535.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
-/*--hero--*/
-.hero{
-    background: #0dcaf0;
+/*-----------main start-----------*/
+.main{
+    max-width: 1355px;
+    max-height: 390px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid red;
 }
 
-.herofon{
-    background: #20c997;
+.main__carousel{
+    max-height: 390px;
+    width: 70%;
+    background-image: url("../img/group1539.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    border: 2px solid blue;
+}
+
+.main__carts{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+}
+
+.main__cart{
+    background-image: url("../img/group1540.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+/*-----main end-----*/
+.carousel2{
+  max-width: 1355px;
+  max-height: 100%;
+  border: 2px solid darkseagreen;
+  display: flex;
+}
+
+.carts__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.news__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.news_column{
+  max-width: 200px;
+  max-height: 250px;
+  border: 2px solid green;
 }
