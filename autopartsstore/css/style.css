@@ -1,0 +1,143 @@
+body {
+    display: block;
+    margin: 0px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-size: 10pt;
+}
+.wrap__top{
+    width: 100%;
+    height: 232px;
+    background-color: lightblue;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+    background-color: #20c997;
+    z-index: 999;
+}
+
+ul.menu__list{
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+li.menu__list-item{
+    display: inline-block; /* Відображати в рядок */
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px; /* відступи навколо тексту */
+}
+
+.menu__left .menu__right{
+    height:100%;
+    background-color: darkseagreen;
+}
+
+/*---nav bar---*/
+
+.navTop{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navBottom{
+    display:flex;
+    justify-content: space-between;
+}
+
+.menuText{
+    text-align: center;
+    font-size: 10pt;
+    text-decoration-color: #6a1a21;
+}
+
+.navbar .logo{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightpink;
+}
+
+.navbar .workTime{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightsalmon;
+}
+
+.navbar .address{
+    width: 20%;
+    height: 80px;
+    margin:10px;
+    background-color: lightcyan;
+}
+.navbar .whatsApp{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightslategrey;
+}
+
+.navbar .phoneNumber{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightcoral;
+}
+
+.navbar .catalog{
+    width: 25%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightcoral;
+}
+
+.navbar .search{
+    width: 50%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightcoral;
+}
+
+.navbar .inLikeShopCart{
+    width: 25%;
+    height: 80px;
+    margin: 10px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inLikeShopCart .logIn{
+    width: 33%;
+    height: 80%;
+    margin: 10px;
+    background-color: lightslategrey;
+}
+
+.inLikeShopCart .like{
+    width: 33%;
+    height: 80%;
+    margin: 10px;
+    background-color: lightslategrey;
+}
+
+.inLikeShopCart .shoppingCart{
+    width: 33%;
+    height: 80%;
+    margin: 10px;
+    background-color: lightslategrey;
+}
