@@ -304,6 +304,9 @@ ul.menu-list{
 
 .sale-cart{
     margin: 10px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+
 }
 
 .cart-title {
@@ -456,10 +459,6 @@ ul.menu-list{
 
 .main-buttons{
     width: 100%;
-}
-
-.buttons{
-    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -477,7 +476,6 @@ ul.menu-list{
     border-radius: 8px;
     display:inline-flex;
     align-items: center;
-    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -490,11 +488,10 @@ ul.menu-list{
     margin: 0px 20px 0px 0px;
     padding: 0px 20px 0px 20px;;
     background-color: #FFFFFF;
-    border-color: #005BB9;
-    border-style: solid;
-    border-size: 3px;
+    border:3px solid #005BB9;
     border-radius: 8px;
     display:inline-flex;
+    justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 20px;
