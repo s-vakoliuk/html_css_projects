@@ -2,35 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Autoparts store</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autoparts store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Title</title>
 </head>
 <body>
 <div class="wrapper">
     <!-----------Header menu start---------->
-    <div class="content">
-        <header class="header-menu">
+    <header class="header">
+        <div class="header-menu">
             <nav class="menu-left">
                 <ul class="menu-list">
                     <li class="list-item">
                         <img class="icon-placeholder" src="img/placeholder_w.svg" alt="icon">
                         <a class="menu__link" href ="#">Ваше місто: Клевань</a>
                     </li>
-                    <li class="list-item">
+                    <div class="menu__left-sub">
+                        <li class="list-item">
                         <a class="menu__link" href ="#">Інформація</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="menu__link" href ="#">Співпраця</a>
-                    </li>
+                        </li>
+                        <li class="list-item">
+                            <a class="menu__link" href ="#">Співпраця</a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
             <nav class="menu-right">
@@ -57,40 +57,47 @@
                         <a class="menu__link" href ="#">Контакти</a>
                     </li>
                 </ul>
+                <ul class="menu__list_hide">
+                    <li class="list-item">
+                        <a class="menu__link" href ="#">Ще</a>
+                    </li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 <!------Header menu end------>
 
 <!--------nav menu start-------->
+    <div class="content">
         <nav class="navbar">
             <nav class="top-box">
-                <div class="top-nav">
-                    <img class="logo" src="img/logo75.png">
+                <div class="logo">
+                    <img class="img-logo" src="img/logo75.png">
                     <div class="text-logo">
                         <div class="text-logo-sup"> AVT-ZAP </div>
                         <div class="text-logo-sub"> Интернет-магазин запчастей для АКПП</div>
                     </div>
                 </div>
-                <div class="top-nav">
+                <div class="timetable">
                     <img class="icon" src="img/time1.svg">
                     <div class="text-nav">
-                        <div class="text-logo-sub"> Ми працюємо: будни - 09:00-21:00 </div>
+                        <div class="text-logo-sub"> Ми працюємо: будні - 09:00-21:00 </div>
                         <div class="text-logo-sub"> сб - 10:00-15:00</div>
                     </div>
                 </div>
-                <div class="top-nav">
+                <div class="location">
                     <img class="icon" src="img/placeholder1.svg">
                     <div class="text-nav">
                         <div class="text-logo-sub"> Проспект Перемоги, б 45</div>
                     </div>
                 </div>
-                <div class="top-nav">
+                <div class="whatsapp">
                     <img class="icon" src="img/whatsapp1.svg">
                     <div class="text-nav">
                         <div class="text-logo-sub"> Напишіть нам у WatsApp</div>
                     </div>
                 </div>
-                <div class="top-nav">
+                <div class="phone-feedback">
                     <div class="text-nav">
                         <div class="text-logo-sup"> +7 383 291 92 86 </div>
                         <div class="text-logo-sub"> <a href="#">Форма зворотнього зв'язку</a></div>
@@ -613,10 +620,8 @@
                 </ul>
         </nav>
         </div>
-
-        <!-----footer end----->
     </div>
-
+        <!-----footer end----->
 </div>
 </body>
 </html>

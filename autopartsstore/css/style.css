@@ -1,8 +1,31 @@
-/*Обнулення*/
-*,*:before,*:after {
-    padding: 0;
-    margin: 0;
-    border: 0;
+/*---Обнулення значень---*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
 }
 
 body {
@@ -10,15 +33,6 @@ body {
     margin: 0px;
     font-family: Roboto;
     font-style: normal;
-}
-
-ul {
-   list-style: none;
-}
-
-a {
-   text-decoration: none;
-   outline: none;
 }
 
 .wrapper {
@@ -39,6 +53,14 @@ img {
 }
 
 /*---------------------header-----------------*/
+header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
 .header-menu {
     display: flex;
     justify-content: space-between;
@@ -64,6 +86,12 @@ img {
     justify-content: space-between;
 }
 
+.menu__left-sub{
+    height:100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon-placeholder{
     width: 20px;
     height: 20px;
@@ -81,6 +109,8 @@ ul.menu-list{
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    display: inline-flex;
+
 }
 
 .list-item{
@@ -112,7 +142,8 @@ ul.menu-list{
 }
 
 
-.logo{
+
+.img-logo{
     width: 75px;
     height: 75px;
 }
@@ -121,15 +152,26 @@ ul.menu-list{
     text-align: justify;
 }
 
-.top-nav {
+.logo, .phone-feedback {
     width: 20%;
     margin: 10px;
-    display: flex;
+    display:flex;
+    flex-direction: row;
     align-items: center;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
 }
+
+.timetable, .location, .whatsapp {
+    width: 20%;
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+}
+
 
 .text-nav{
     display: flex;
@@ -304,7 +346,7 @@ ul.menu-list{
 
 .sale-cart{
     margin: 10px;
-    border: 1px solid cadetblue;
+    border: 1px solid #E1E5F8;
     border-radius: 5px;
 
 }
@@ -411,7 +453,7 @@ ul.menu-list{
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    border: 1px solid cadetblue;
+    border: 1px solid #E1E5F8;
     border-radius: 5px;
 }
 .catalog-wrap{
@@ -512,7 +554,7 @@ ul.menu-list{
     width: 320px;
     height: 420px;
     margin: 10px;
-    border: 1px solid cadetblue;
+    border: 1px solid #E1E5F8;
     border-radius: 5px;
 }
 
@@ -663,7 +705,6 @@ h4{
 }
 
 .list-item{
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -673,7 +714,6 @@ h4{
 }
 
 .item__link{
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -685,3 +725,6 @@ h4{
     width: 115px;
     height: 45px;
 }
+
+/*-----------------------------*/
+

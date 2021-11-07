@@ -1,15 +1,37 @@
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 1600px) {
+    .menu__list_hide{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
 
     .wrapper{
-        max-width: 340px;
+        max-width: 840px;
         padding: 0 10px;
     }
 
-       .header__menu{
+    .menu-right{
         display:none;
     }
 
-    .header__logo{
-        width: 50px;
+    .timetable, .location, .whatsapp{
+        display: none;
+    }
+
+    .menu__list_hide{
+        display:inline-block;
+    }
+
+    .top-box{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    blockquote:before, blockquote:after,
+    q:before, q:after{
+        display: none;
     }
 }
