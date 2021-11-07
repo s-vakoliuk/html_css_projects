@@ -1,3 +1,10 @@
+/*Обнулення*/
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 body {
     display: block;
     margin: 0px;
@@ -14,12 +21,15 @@ a {
    outline: none;
 }
 
-.wrapper{
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content{
     max-width: 1355px;
-    width: 100%;
     margin: 0 auto;
     min-height:100%;
-    overflow: hidden;
     flex-direction: column;
 }
 
@@ -31,22 +41,27 @@ img {
 /*---------------------header-----------------*/
 .header-menu {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
     top:0px;
     left: 0px;
     width: 100%;
-    height: 36px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    max-height: 36px;
     background-color: #0F2438;
     z-index: 999;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-left .menu-right{
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .icon-placeholder{
@@ -62,28 +77,22 @@ img {
 
 ul.menu-list{
     height: 100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
 }
 
 .list-item{
-    display: inline-block; /* Відображати в рядок */
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 3px; /* відступи навколо тексту */
-}
-
-.menu-left .menu-right{
-    height:100%;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .menu__link{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px 0px;
     color: #FFFFFF;
 }
 
@@ -227,11 +236,64 @@ ul.menu-list{
 }
 
 .carousel-main{
+    max-width: 1008px;
     max-height: 390px;
     width: 70%;
-
+    border-radius: 20px;
+    background-image: url("../img/carousel_fon.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+.img-wrap{
+    max-width: 420px;
+    max-height: 360px;
+    margin: 0px 0px 0px 0px;
+}
+
+.price-wrap{
+    max-width: 330px;
+    max-height: 210px;
+    margin: 0px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+.price-title{
+    font-size: 36px;
+    line-height: 42px;
+    color: #0A1A2C;
+}
+
+.price-name{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #717171;
+}
+
+.main-pay{
+    font-size: 37px;
+    line-height: 43px;
+    color: #005BB9;
+}
+.main-btn {
+    width: 100px;
+    height: 50px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;;
+    background-color: #005BB9;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
 .carts-section{
     width:30%;
     height: 190px;
@@ -331,8 +393,6 @@ ul.menu-list{
 
 /*-----*/
 
-
-
 .catalog-carousel{
     max-width: 1355px;
     max-height: 100%;
@@ -347,7 +407,9 @@ ul.menu-list{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
 }
 .catalog-wrap{
     display: flex;
@@ -452,7 +514,9 @@ ul.menu-list{
 .card{
     width: 320px;
     height: 420px;
-    margin: 20px 0px 0px 0px;
+    margin: 10px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
 }
 
 .img-catalog{
@@ -573,8 +637,6 @@ h4{
     position: relative;
     background-color: #0F2438;
     z-index: 999;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -584,7 +646,7 @@ h4{
 }
 
 .menu-column{
-    width: 280px;
+    min-width: 240px;
     display: block;
 }
 
