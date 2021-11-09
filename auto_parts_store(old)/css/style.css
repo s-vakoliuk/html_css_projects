@@ -1,79 +1,77 @@
-/*----------Обнулення значень----------*/
-*{
+/*---Обнулення значень---*/
+*,
+*::before,
+*::after {
 	padding: 0;
 	margin: 0;
 	border: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-
-
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+a {
+	text-decoration: none;
 }
-input,button,textarea{font-family:inherit;}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+body {
+    display: block;
+    margin: 0;
+    font-family: Roboto, serif;
+    font-style: normal;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------------------------*/
-/*---------------wrapper--------------*/
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    display:flex;
-    flex-direction: column;
-    font-family: Roboto;
 }
-/*------------------header--------------*/
-.header{
-    width: 100%;
+
+.content{
+    max-width: 1355px;
+    margin: 0 auto;
+    min-height:100%;
+    flex-direction: column;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+/*---------------------header-----------------*/
+header {
     position: absolute;
+    width: 100%;
     left: 0;
     top: 0;
-    z-index: 1;
-    background-color: #0F2438;
+    z-index: 50;
 }
-/*----------------header----------------*/
 
-/*----------------content---------------*/
-.content {
-    max-width: 1355px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10px 0 10px;
-}
-/*----------------content----------------*/
-/*-----------header menu end------------*/
 .header-menu {
-    max-width: 1350px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0px auto;
     align-items: center;
+    top:0;
+    left: 0;
     width: 100%;
     max-height: 36px;
-    z-index: 5;
+    background-color: #0F2438;
+    z-index: 999;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -100,10 +98,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 4px;
 }
 
-.icon{
+.icon-link{
     display: inline-flex;
     align-items: center;
-    margin: 5px;
 }
 
 ul.menu-list{
@@ -128,153 +125,125 @@ ul.menu-list{
     margin: 0 10px 0 0;
     color: #FFFFFF;
 }
-/*-----------header menu end------------*/
-/*--------------nav bar----------------*/
+
+/*----------------nav bar----------------*/
+
 .navbar{
-    max-width: 100%;
+    max-width: 1355px;
     max-height: 195px;
     position: center;
-    margin: 35px auto 0px auto;
-    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.nav-top{
-    width: 100%;
+.top-box{
     display:flex;
-    align-items: center;
     justify-content: space-between;
 }
 
+
+
 .img-logo{
-    max-width: 75px;
-    max-height: 75px;
-    width: 100%;
-    height: auto;
+    width: 75px;
+    height: 75px;
 }
 
 .text-logo {
     text-align: justify;
 }
 
-.text-logo-title {
-    text-align: left;
+.logo, .phone-feedback {
+    width: 20%;
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
 }
+
+.timetable, .location, .whatsapp {
+    width: 20%;
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+}
+
 
 .text-nav{
-    text-align: right;
-}
-
-.logo-name {
-    width: 100%;
-    max-width: 250px;
+    display: flex;
+    flex-direction:column;
     margin: 10px;
-    display:flex;
-    flex-direction: row;
-    flex-basis:auto;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.timetable-location{
-    width: 100%;
-    height: auto;
-    max-width: 525px;
-    display:flex;
-    flex-basis:auto;
-}
-
-.whatsapp-phone-feedback{
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-    display:flex;
-    flex-basis:auto;
-    text-align: right;
-}
-
-.timetable,
-.location,
-.whatsapp,
-.phone-feedback {
-    margin: 10px;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
 }
 
 .text-logo-sup{
-    display: flex;
-    flex-wrap:wrap;
-    margin: 10px;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .text-logo-sub{
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .icon {
-    max-width: 32px;
-    max-height: 32px;
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
+    width: 32px;
+    height: 32px;
 }
 
 .nav-bottom{
     width: 100%;
-    height: auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.catalog-search{
-    width: 50%;
-    display:inline-flex;
-    justify-content: space-between;
-    margin: 0 10px 0 10px;
-}
-
-.img-burger{
-    margin: 10px;
-}
-
-.search-btn, .catalog-btn{
+.menu-btn{
     background-color: #005BB9;
     border-radius: 8px;
     display:inline-flex;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0 20px 0 20px;
-    max-height: 53px;
+    padding: 0 20px;
+    height: 53px;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
 }
 
-.catalog-btn{
-    width: 164px;
+.search-box{
+    width: 20%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.search-btn{
+    background-color: #005BB9;
+    border-radius: 8px;
+    display:inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 53px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 
 .input-search{
-    width: 100%;
-    max-height: 53px;
-    margin: 0 10px 0 10px;
-    color: #C2C5DA;
-    background-color: #F4F5FA;
+    max-width: 649px;
+    width: 649px;
+    height: 53px;
 }
+
 
 .catalog{
     width: 164px;
     margin: 0;
+
 }
 
 .nav-search{
@@ -284,11 +253,9 @@ ul.menu-list{
 }
 
 .in-like-shop{
-    width: 50%;
-    height: auto;
-    max-width: 450px;
-    max-height: 50px;
-    margin: 0 10px 0 10px;
+    width: 420px;
+    height: 40px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -296,31 +263,23 @@ ul.menu-list{
 
 .box-nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
-/*------------nav bar end------------*/
-/*-----------main start--------------*/
+
+/*-----------main start-----------*/
 .main{
-    max-width: 1350px;
+    max-width: 1355px;
     max-height: 390px;
-    min-width: 320px;
-    min-height: 210px;
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .carousel-main{
     max-width: 1008px;
     max-height: 390px;
-    min-width: 290px;
-    min-height: 195px;
-    width: 65%;
-    height: auto;
+    width: 70%;
     border-radius: 20px;
     background-image: url("../img/carousel_fon.png");
     display: flex;
@@ -329,48 +288,43 @@ ul.menu-list{
     justify-content: center;
 }
 
-.main-price-wrap{
+.img-wrap{
+    max-width: 420px;
+    max-height: 360px;
+    margin: 0;
+}
+
+.price-wrap{
     max-width: 330px;
     max-height: 210px;
-    width: 100%;
-    height: auto;
-    z-index: 10;
     margin: 0;
-    padding: 10px;
     justify-content: space-between;
 }
 
 .price-title{
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 36px;
+    line-height: 42px;
     color: #0A1A2C;
 }
 
 .price-name{
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     text-decoration-line: underline;
     color: #717171;
 }
 
-.price-old{
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration-line: line-through;
-    color: #C2C5DA;
-}
-
-.price-new{
-    font-size: 30px;
-    line-height: 35px;
+.main-pay{
+    font-size: 37px;
+    line-height: 43px;
     color: #005BB9;
 }
-
-.main-btn-cart {
-    width: 160px;
+.main-btn {
+    width: 100px;
     height: 50px;
-    padding: 0 20px 0 20px;
+    margin: 0;
+    padding: 0 20px 0 20px;;
     background-color: #005BB9;
     border-radius: 8px;
     display: inline-flex;
@@ -381,77 +335,45 @@ ul.menu-list{
     line-height: 23px;
     color: #FFFFFF;
 }
-
-.img-cart{
-    max-width: 80px;
-    max-height: 80px;
-    width: 100%;
-    height: auto;
-}
-
-.main-img-parts {
-    max-width: 420px;
-    max-height: 360px;
-    width: 100%;
-    height: auto;
-}
-
-/*-----------cards main--------*/
-
-.cards-main{
-    max-width: 1008px;
-    max-height: 390px;
-    min-width: 290px;
-    min-height: 195px;
-    width: 35%;
-    height: auto;
+.carts-section{
+    width:30%;
+    height: 190px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
 }
 
-.card-section{
-    max-width: 340px;
-    max-height: 190px;
-    min-width: 240px;
-    min-height: 150px;
-    width: 100%;
-    height: auto;
-    background: #F4F5FA;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+.sale-cart{
+    margin: 10px;
+    border: 1px solid #E1E5F8;
+    border-radius: 5px;
+
 }
 
-.card-title {
+.cart-title {
     width: 100%;
-    padding: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #0F2438;
-
 }
 
-.title-img-wrap{
-    width: 100%;
-    height: auto;
+.sale-wrap{
     display: flex;
-    flex-direction: row;
+
 }
 
 .name-price{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    margin: 0 0 0 15px;
 }
 
 .img-sale{
+    width: 80px;
+    height: 80px;
     max-width: 80px;
     max-height: 80px;
-    width: 100%;
-    height: auto;
 }
 
 
@@ -470,21 +392,11 @@ ul.menu-list{
     color: #525252;
 }
 
-.price-wrap{
+.price-pay{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.price-new-title{
-    max-width: 200px;
-    max-height: 50px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 37px;
-    line-height: 43px;
-    color: #005BB9;
 }
 
 .price-new{
@@ -502,7 +414,8 @@ ul.menu-list{
     color: #C2C5DA;
 }
 
-.btn-cart{
+.cart-btn{
+    background-color: #005BB9;
     border-radius: 8px;
     display:inline-flex;
     align-items: center;
@@ -511,20 +424,18 @@ ul.menu-list{
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    background-color: #005BB9;
     color: #FFFFFF;
 }
 
-.cart-icon {
+.icon-sale {
     width: 20px;
     height: 20px;
     align-items: center;
 }
 
-
 /*-----main end-----*/
 
-/*-----------------*/
+/*-----*/
 
 .catalog-carousel{
     max-width: 1355px;
@@ -570,6 +481,19 @@ ul.menu-list{
     max-width: 155px;
     max-height: 200px;
     align-items: center;
+}
+
+.catalog-btn{
+    height: 30px;
+    background-color: #005BB9;
+    border-radius: 8px;
+    display:inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 /*-------------button section----------------------*/
@@ -688,8 +612,8 @@ ul.menu-list{
 .card-btn{
     width: 100px;
     height: 50px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 20px 0px 20px;;
+    margin: 0 0 0 0;
+    padding: 0 20px 0 20px;;
     background-color: #005BB9;
     border-radius: 8px;
     display:inline-flex;
@@ -742,8 +666,8 @@ h4{
 
 .footer-menu{
     display: flex;
-    top:0px;
-    left: 0px;
+    top:0;
+    left: 0;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -755,7 +679,7 @@ h4{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
 }
 
@@ -785,7 +709,7 @@ h4{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    margin: 5px 0px 0px 0px;
+    margin: 5px 0 0 0;
 }
 
 .item__link{
@@ -802,4 +726,3 @@ h4{
 }
 
 /*-----------------------------*/
-

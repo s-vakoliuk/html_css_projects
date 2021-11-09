@@ -1,6 +1,6 @@
 
 @media only screen and (max-width: 1600px) {
-    .menu-right-burger{
+    .menu-right-hide{
         display: none;
     }
 }
@@ -16,30 +16,16 @@
         display:none;
     }
 
-    .menu-right-burger{
+    .menu-right-hide{
         display:inline-block;
     }
-
-    .timetable-location {
-        width: 33.333%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .whatsapp-phone-feedback{
-    width: 33.333%;
-    display:flex;
-    flex-wrap: wrap-reverse;
-    }
-
-
-
 
     .top-box{
         display: flex;
         justify-content: space-around;
     }
 
-    .catalog-btn__text{
+    .text-btn{
         display: none;
     }
 
