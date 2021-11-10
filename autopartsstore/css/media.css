@@ -7,17 +7,17 @@
 
 @media only screen and (max-width: 850px) {
 
-    .wrapper{
+    .wrapper {
         max-width: 850px;
         padding: 0 10px;
     }
 
-    .menu-right-view{
-        display:none;
+    .menu-right-view {
+        display: none;
     }
 
-    .menu-right-burger{
-        display:inline-block;
+    .menu-right-burger {
+        display: inline-block;
     }
 
     .timetable-location {
@@ -25,27 +25,30 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .whatsapp-phone-feedback{
-    width: 33.333%;
-    display:flex;
-    flex-wrap: wrap-reverse;
-    }
 
-
-
-
-    .top-box{
+    .whatsapp-phone-feedback {
+        width: 33.333%;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap-reverse;
     }
-
-    .catalog-btn__text{
-        display: none;
-    }
-
 
     blockquote:before, blockquote:after,
-    q:before, q:after{
+    q:before, q:after {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+     /*font-size: 24px;*/
+    .text-logo-title{
+        font-size: 14px;
+    }
+    .text-logo-sub {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    .catalog-btn__text {
         display: none;
     }
 }

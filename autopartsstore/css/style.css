@@ -18,8 +18,8 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
-
-
+    line-height: 1;
+	font-size: 14px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     background-color: #0F2438;
 }
 /*----------------header----------------*/
@@ -61,8 +61,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 100%;
     margin: 0 auto;
     padding: 0 10px 0 10px;
+    flex: 1 1 auto;
 }
-/*----------------content----------------*/
+/*----------------content---------------*/
 /*-----------header menu end------------*/
 .header-menu {
     max-width: 1350px;
@@ -134,12 +135,12 @@ ul.menu-list{
     max-width: 100%;
     max-height: 195px;
     position: center;
-    margin: 35px auto 0px auto;
-    padding: 20px;
+    margin: 35px 0 0 0;
 }
 
 .nav-top{
     width: 100%;
+    height: auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -160,15 +161,13 @@ ul.menu-list{
     text-align: left;
 }
 
-.text-nav{
-    text-align: right;
-}
-
 .logo-name {
     width: 100%;
+    height: auto;
     max-width: 250px;
-    margin: 10px;
+    min-width: 205px;
     display:flex;
+    justify-content: right;
     flex-direction: row;
     flex-basis:auto;
     align-items: center;
@@ -180,22 +179,56 @@ ul.menu-list{
     width: 100%;
     height: auto;
     max-width: 525px;
+    min-width: 250px;
     display:flex;
     flex-basis:auto;
+}
+
+.timetable, .location {
+    width: 100%;
+    height: auto;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+    padding: 5px;
 }
 
 .whatsapp-phone-feedback{
     width: 100%;
     height: auto;
     max-width: 450px;
+    min-width: 210px;
     display:flex;
+    justify-content: right;
     flex-basis:auto;
     text-align: right;
 }
 
-.timetable,
-.location,
-.whatsapp,
+.whatsapp_icon{
+    width: 100%;
+    height: auto;
+    max-width: 20px;
+    min-width: 12px;
+    padding: 5px;
+}
+
+.whatsapp{
+    max-width: 204px;
+    max-height: 30px;
+    border-radius: 2px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    background: #E1EFD0;
+    color: #000000;
+}
+
 .phone-feedback {
     margin: 10px;
     display:flex;
@@ -205,23 +238,23 @@ ul.menu-list{
     font-weight: 500;
 }
 
-.text-logo-sup{
+.text-logo-title{
     display: flex;
     flex-wrap:wrap;
     margin: 10px;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .text-logo-sub{
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
 }
 
 .icon {
     max-width: 32px;
-    max-height: 32px;
-    max-width: 100%;
+    min-width: 20px;
+    width: 100%;
     height: auto;
     margin: 5px;
 }
@@ -229,44 +262,63 @@ ul.menu-list{
 .nav-bottom{
     width: 100%;
     height: auto;
+    max-width: 840px;
+    max-height: 53px;
+    min-width: 290px;
+    min-height: 34px;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .catalog-search{
-    width: 50%;
-    display:inline-flex;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 0 10px 0 10px;
 }
 
 .img-burger{
-    margin: 10px;
+    margin: 5px;
 }
 
-.search-btn, .catalog-btn{
-    background-color: #005BB9;
+.catalog-btn{
     border-radius: 8px;
     display:inline-flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding: 0 20px 0 20px;
-    max-height: 53px;
+    padding: 15px;
+    max-width: 90px;
+    min-width: 33px;
+    width: 100%;
+    height: 100%;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+    background-color: #005BB9;
     color: #FFFFFF;
 }
 
-.catalog-btn{
-    width: 164px;
+.search-btn{
+    border-radius: 0 8px 8px 0;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    width: 90px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #005BB9;
+    color: #FFFFFF;
 }
 
 .input-search{
     width: 100%;
-    max-height: 53px;
+    height: 53px;
     margin: 0 10px 0 10px;
     color: #C2C5DA;
     background-color: #F4F5FA;
@@ -277,14 +329,10 @@ ul.menu-list{
     margin: 0;
 }
 
-.nav-search{
-    width: 40%;
-    display:flex;
-    justify-content: space-between;
-}
+
 
 .in-like-shop{
-    width: 50%;
+    width: 100%;
     height: auto;
     max-width: 450px;
     max-height: 50px;
@@ -314,7 +362,7 @@ ul.menu-list{
     margin-top: 20px;
 }
 
-.carousel-main{
+.main-carousel{
     max-width: 1008px;
     max-height: 390px;
     min-width: 290px;
@@ -346,12 +394,25 @@ ul.menu-list{
     color: #0A1A2C;
 }
 
-.price-name{
+.price-name-title{
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-decoration-line: underline;
     color: #717171;
+}
+
+.price-old-title{
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #C2C5DA;
+}
+
+.price-new-title{
+    font-size: 30px;
+    line-height: 35px;
+    color: #005BB9;
 }
 
 .price-old{
@@ -707,7 +768,7 @@ ul.menu-list{
     margin: 20px;
 }
 
-/*------------- section news-bar----------------------*/
+/*--------section news-bar------------*/
 
 .news-container{
   display: flex;
@@ -738,45 +799,52 @@ h4{
     color: #FFFFFF;
 }
 
-/*------------- footer menu----------------------*/
+/*-----------footer menu---------------*/
 
 .footer-menu{
-    display: flex;
     top:0px;
     left: 0px;
     width: 100%;
-    height: 100%;
-    align-items: center;
+    height: auto;
+}
+
+.menu-columns {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    background-color: #0F2438;
+    align-items: start;
     z-index: 999;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0 auto;
+    padding: 35px;
 }
 
 .menu-column{
-    min-width: 240px;
-    display: block;
+    max-width: 240px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
 }
 
 .column-list{
     height: 100%;
     text-align: left;
-    margin: 0 auto;
+    display: flex;
     flex-direction: column;
     justify-content: left;
+    line-height: 2;
+    align-items: start;
 }
 
-.title-column{
+.list-title{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #868DAC;
+    outline: none;
 }
 
 .list-item{
@@ -800,6 +868,82 @@ h4{
     width: 115px;
     height: 45px;
 }
+/*--------feedback-form-------*/
 
-/*-----------------------------*/
+.feedback-form{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #858CAB;
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    justify-content: space-between;
+}
 
+.feedback-form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.feedback-form-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 455px;
+    max-height: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.subscribe-input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #F4F5FA;
+}
+
+.subscribe-btn{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;/* identical to box height */
+    text-align: center;
+    background-color: #005BB9;
+    color: #FFFFFF;
+}
+
+.icons{
+    padding: 10px;
+}
+
+.icons-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 15px;
+}
+
+/*-------footer-----------*/
+.footer{
+    width: 100%;
+
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #0F2438;
+}
